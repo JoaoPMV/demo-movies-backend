@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3000;
 
 const corsOptions = {
   origin: [
-    "https://demo-movies-three.vercel.app",
+    "https://joaopmv-movies.vercel.app",
     "http://localhost:5173",
     "http://localhost:3000",
   ],
