@@ -9,8 +9,20 @@ import userRoutes from "./routes/userRoutes.js";
 dotenv.config();
 
 const app = express();
+const PORT = process.env.PORT || 3000;
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "http://localhost:3000",
+      "https://demo-movies-three.vercel.app",
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    credentials: true,
+  }),
+);
+
 app.use(express.json());
 
 app.use("/movies", movieRoutes);
@@ -18,6 +30,6 @@ app.use("/users", userRoutes);
 
 connectDatabase();
 
-app.listen(3000, () => {
-  console.log("Servidor rodando na porta 3000");
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
 });
