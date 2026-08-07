@@ -13,13 +13,20 @@ const PORT = process.env.PORT || 3000;
 
 const corsOptions = {
   origin: [
+    "https://demo-movies-three.vercel.app",
     "http://localhost:5173",
     "http://localhost:3000",
-    "https://demo-movies-three.vercel.app",
   ],
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
+  methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE", "OPTIONS"],
+  allowedHeaders: [
+    "Origin",
+    "X-Requested-With",
+    "Content-Type",
+    "Accept",
+    "Authorization",
+    "Cache-Control",
+  ],
 };
 
 app.use(cors(corsOptions));
