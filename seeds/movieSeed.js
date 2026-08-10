@@ -7,16 +7,16 @@ import Movie from "../models/Movie.js";
 dotenv.config();
 
 const movieData = {
-  slug: "marriagestory",
-  title: "Marriage Story",
+  slug: "vacation",
+  title: "People on Vacation",
   image:
-    "https://res.cloudinary.com/di8ymyg1/image/upload/v1785438412/marriage_story.jpg",
+    "https://res.cloudinary.com/di8ymyg1/image/upload/v1786380985/vacation_ocoozt.jpg",
   moviesSubtitle: `
-What I {love} about Nicole, she is a {mother} who plays, {really} plays. What I {love} about Charlie. He loves being a {dad}. He loves all the {things} you're {supposed} to hate, like waking up at {night}. She knows when to {push} me and when to {leave} me {alone}. He never lets other people {keep} him from what he {wants} to do. Dad, you're too {far}. I know. It's not {easy} for her to {close} a cabinet. He's {incredibly} neat. She's {brave}. He's {brilliant}. He's very {competitive}. So I'll tell Charlie what's {happening}, and Cassie, you then {hand} him the envelope. I just get {nervous}. Can you {unserve}? What do you {mean}, like take it back? Charlie and I are getting a {divorce}, mom. You can't be {friends} with him {anymore}. G-ma. Charlie Bird. Mom. Mom. Mom. What? You know, most people in my {business}, you're just {transactions}. I like to think of you as people. Oh, okay, good. You {remind} me of myself on my second {marriage}. Part of what we're {going} to do {together} is tell your story. Did you {dye} your {hair} again? No, this is me. You {don't} like it? Is it {shorter}? I prefer it {longer}, but... How are you doing? I {realized} I never really come alive for {myself}. I was just feeding his {aliveness}. I'll never get to {really} be his parent again. He needs to know that I {fought} for him. It's not as simple as not being in love {anymore}. {Eventually}, there'll be the two of you having to {figure} this {out}. Together. If we start {from} a place of {reasonable} and they start {from} a place of {crazy}, when we settle, we'll be somewhere between {reasonable} and {crazy}.
+Alex, {come} here. Honey, Alex is here. Ta-da! Are those {condoms}? I just want you to be {safe}, that's all. How {many} times do I have to {tell} you? Alex and I are {just} {friends}, so we {don't} need condoms. And we {definitely} don't need 500. {Because} we're not an {army}. Please stop. Okay, Wanda! On {vacation}, you can be {anyone} you want. Who {wants} to go {skinny}-dipping? Alex {does} not. Maybe vacation, Alex does. That's why I want to {travel}. You can {actually} be who you want to be {instead} of who they say you are. How about {every} {summer}, {wherever} we are, we meet {somewhere} in the world for a {trip}. Deal. Beignets on the {house} to the lovebirds. Thank you. No. No. Hey! What a {coincidence}. We just got hitched too. So {sweet}. Congratulations you two. I told you. Come on {vacation}, Alex. Is that the best you got? Okay, you {asked} for this. Oh my god. I'm gonna {pick} you {up} on the {condition} that you don't call me Seabiscuit. How {did} you know that I {really} want to do that? {Because} I know you. Poppy, you take vacations for a {living}. Make me burn with {jealousy} for your {carefree}, jet-setting life. But I mean, don't you ever {find} travel a little {lonely}? I'm here. I'll {always} be here. Sorry. What was that? I'm just {confused}. What am I to you? You're my {friend}. I do not deserve you. I know. My best friend. Alex, I think it's {called} settling. You live in a {fantasy} {land}. Always {running} away to new places, new {connections}. Maybe the universe is {giving} me a sign. That's a {heck} of a girl. You.
 `,
-  youtubeEmbed: "https://www.youtube.com/embed/BHi-a1n8t7M",
+  youtubeEmbed: "https://www.youtube.com/embed/m1C9DTOUH5s",
   synopsis:
-    "A stage director and his actor wife struggle through a grueling divorce that pushes them to their personal and creative extremes. Noah Baumbach's incisive and compassionate look at a marriage breaking up and a family staying together.",
+    "Free-spirited Poppy (Emily Bader) and routine-loving Alex (Tom Blyth) have been unlikely best friends for a decade, living in different cities but spending every summer vacation together. The careful balance of their friendship is put to the test when they begin to question what has been obvious to everyone else -- could they actually be the perfect romantic match?",
 };
 
 async function seed() {

@@ -16,6 +16,7 @@ const corsOptions = {
     "https://joaopmv-movies.vercel.app",
     "http://localhost:5173",
     "http://localhost:3000",
+    "http://192.168.1.4:5173",
   ],
   credentials: true,
   methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE", "OPTIONS"],
@@ -40,6 +41,6 @@ app.use("/users", userRoutes);
 
 connectDatabase();
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Servidor rodando na porta ${PORT}`);
 });
