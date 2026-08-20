@@ -1,55 +1,114 @@
-# Projects: Movies 🎬 – Backend (API)
+# Movies API
 
-API REST para gerenciar filmes e exercícios de aprendizado de inglês.  
-Fornece autenticação, persistência de dados e endpoints para o frontend consumir.
+API backend da aplicação **Movies**, responsável por autenticação de usuários e fornecimento de dados para o frontend.
 
-## 🎯 Objetivo
+---
 
-Oferecer uma API robusta e segura para suportar a aplicação frontend, gerenciando usuários, filmes e progresso de aprendizado.
+## Objetivo
 
-## 🛠️ Stack Tecnológico
+Fornecer serviços de backend para:
+
+- cadastro e autenticação de usuários
+- proteção de rotas com JWT
+- integração com banco de dados MongoDB
+- suporte aos exercícios de filmes consumidos pelo frontend
+
+---
+
+## Tecnologias Utilizadas
 
 - Node.js
 - Express
-- MongoDB
+- MongoDB + Mongoose
 - JWT (autenticação)
-- bcrypt (hash de senha)
+- bcrypt
 
-## ✨ Funcionalidades
+---
 
-- ✅ Autenticação com JWT
-- ✅ Cadastro e login de usuários
-- ✅ Rotas protegidas
-- ✅ CRUD de filmes
-- ✅ Armazenamento de respostas do usuário
-- ✅ Cálculo de pontuação
+## Funcionalidades
 
-## 🚀 Como Começar
+- Cadastro de usuários
+- Login com geração de token JWT
+- Middleware de autenticação
+- Rotas protegidas
+- CRUD/listagem de dados de filmes (conforme implementação)
+
+---
+
+## Melhorias Futuras
+
+- [ ] Refresh token
+- [ ] Recuperação de senha
+- [ ] Validação avançada de payload
+- [ ] Rate limiting
+- [ ] Logs e monitoramento
+
+---
+
+## Como Executar o Projeto
 
 ### Pré-requisitos
 
 - Node.js instalado
-- MongoDB rodando
+- MongoDB em execução (local ou cloud)
 
-### Instalação
+### 1. Clonar o repositório
+
+```bash
+git clone https://github.com/JoaoPMV/movies-backend.git
+```
+
+### 2. Acessar a pasta do projeto
+
+```bash
+cd backend
+```
+
+### 3. Instalar as dependências
 
 ```bash
 npm install
+```
+
+### 4. Configurar variáveis de ambiente
+
+Crie um arquivo `.env` na raiz do projeto com:
+
+```env
+PORT=3000
+MONGO_URI=sua_string_de_conexao_mongodb
+JWT_SECRET=seu_segredo_jwt
+```
+
+### 5. Executar o projeto
+
+```bash
 npm run dev
 ```
 
-Configure as variáveis de ambiente no `.env`:
+Se não houver script `dev`, use:
 
-````PORT=3000
-MONGODB_URI=mongodb://localhost:27017/movies
-JWT_SECRET=sua_chave_secreta_aqui_```
+```bash
+npm start
+```
 
-## 🔗 Integração
+A API ficará disponível em:
 
-Este é o **backend** da aplicação. O frontend (React) está em:
-👉 https://github.com/JoaoPMV/movies-frontend
+```bash
+http://localhost:3000
+```
 
-## 📝 Status do Projeto
+---
 
-Projeto em evolução para portfólio, com frontend e backend integrados.
-````
+## Frontend da Aplicação
+
+Este repositório contém apenas o backend da aplicação.  
+O frontend está disponível em:  
+https://github.com/JoaoPMV/movies-frontend
+
+---
+
+## Autor
+
+Desenvolvido por **JoaoPMV**  
+GitHub: https://github.com/JoaoPMV
